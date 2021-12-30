@@ -1,0 +1,6 @@
+team1,team2,score1,score2,formation_used1,formation_used2,touches1,touches2,total_pass1,total_pass2,total_tackle1,total_tackle2
+Arsenal,Brighton and Hove Albion,2,0,4231.0,433.0,727.0,645.0,565.0,489.0,14.0,17.0
+Aston Villa,Chelsea,2,1,4231.0,3421.0,431.0,797.0,250.0,598.0,14.0,18.0
+Fulham,Newcastle United,0,2,3421.0,532.0,778.0,517.0,596.0,333.0,18.0,13.0
+Leeds United,West Bromwich Albion,3,1,532.0,3421.0,465.0,685.0,268.0,499.0,19.0,21.0
+Leicester City,Tottenham Hotspur,2,4,4231.0,442.0,710.0,651.0,492.0,444.0,18.0,28.0
