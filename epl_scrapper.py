@@ -1,7 +1,8 @@
 import requests
 import pandas as pd
 
-SEASON_20_21_URL = "https://footballapi.pulselive.com/football/fixtures?comps=1&compSeasons=363&teams=1,2,131,43,4,6,7,34,9,26,10,11,12,23,18,20,21,36,25,38&page=0&pageSize=5&sort=desc&statuses=C&altIds=true"
+NUMBER_OF_MATCHES = 5
+SEASON_20_21_URL = f'https://footballapi.pulselive.com/football/fixtures?comps=1&compSeasons=363&teams=1,2,131,43,4,6,7,34,9,26,10,11,12,23,18,20,21,36,25,38&page=0&pageSize={NUMBER_OF_MATCHES}&sort=desc&statuses=C&altIds=true'
 MATCH_STATISTICS_URL = "https://footballapi.pulselive.com/football/stats/match"
 
 headers = {"origin": "https://www.premierleague.com"}
