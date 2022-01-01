@@ -33,7 +33,7 @@ def wtf(f_name):
                     "total_back_zone_pass1",
                     "fk_foul_lost1", # team fouled, freekick against them
                     ]]
-        df_team.to_csv(f'team/{team_name}_stats.csv', index=False)
+        df_team.to_csv(f'teams/{team_name}_stats.csv', index=False)
 
 if __name__ == "__main__":
     wtf("matches.csv")

@@ -42,7 +42,6 @@ use_stats_names = ['formation_used',
                     "total_final_third_passes",
                     "attempts_obox", # outside box
                     "attempts_ibox", # inside box
-                    "fouled_final_third",
                     "total_offside",
 
                     ### defensive ###
