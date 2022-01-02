@@ -43,8 +43,8 @@ def wtf(f_name):
         df_team2.columns = COL_NAMES
         df_team = pd.concat([df_team1, df_team2])
 
-        df_team.to_csv(f'teams/{team_name}_stats.csv', index=False)
+        df_team.to_csv(f'data/teams/{team_name}_stats.csv', index=False)
 
 
 if __name__ == "__main__":
-    wtf("matches.csv")
+    wtf("data/matches.csv")

@@ -70,6 +70,8 @@ def get_match_statistics(match_url: str):
 
     match_info = data['entity']
     stats_info = data['data']
+    team1_id = str(match_info['teams'][0]['team']['id'])
+    team2_id = str(match_info['teams'][1]['team']['id'])
     
     match_result = [
         match_info['teams'][0]['team']['name'], 
@@ -80,8 +82,12 @@ def get_match_statistics(match_url: str):
     stats_result = {key: [] for key in use_stats_names}
 
 
-    for team_stat in stats_info.values():
-        all_stats = team_stat['M']
+    for team_id in (team1_id, team2_id):
+        try:
+            all_stats = stats_info[team_id]['M']
+        except:
+            print(team1_id, team2_id, match_url, '!!!!!!!!!!')
+            print(stats_info)
         for stat in all_stats:
             if stat['name'] in use_stats_names:
                 stats_result[stat['name']].append(stat['value'])
@@ -113,7 +119,7 @@ def create_csv(matches):
         final_data.append(final_match_data)
 
     df = pd.DataFrame(final_data, columns=csv_columns)
-    df.to_csv('matches.csv', index=False)
+    df.to_csv('data/matches.csv', index=False)
     
 
 
