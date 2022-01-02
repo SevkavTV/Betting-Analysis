@@ -37,7 +37,7 @@ def construct_means():
     for i, col in enumerate(cols):
         if i == 0:
             continue
-        data[f"{col}_av_diff"] = data[col] - averages[i-1]
+        data[f"{col}_av_diff"] = (data[col] - averages[i-1])/averages[i-1]*100
 
     return data
 
