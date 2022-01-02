@@ -40,7 +40,13 @@ def filter_matches(param):
                 "rating": "rating2"}, inplace=True)
     del data["team"]
 
-    return filter_data(data, param)
+    data = filter_data(data, param)
+    if param:
+        data.to_csv('data/agressive.csv', index=False)
+    else:
+        data.to_csv('data/defensive.csv', index=False)
+
+    return data
 
 
 def filter_data(data, param):
@@ -50,9 +56,10 @@ def filter_data(data, param):
     data = data[['team1', 'team2', 'score1', 'score2', 'rating1',
                  'rating2', 'strategy1', 'strategy2']].reset_index()
     del data['index']
+
     return data
 
 
 if __name__ == '__main__':
-    print(filter_matches(1))
-    print(filter_matches(0))
+    filter_matches(1)
+    filter_matches(0)
