@@ -30,10 +30,19 @@ def construct_means():
         mean = gen_mean(t)
         data = data.append({cols[i]: mean[i]
                            for i in range(len(cols))}, ignore_index=True)
+
+    averages = [sum(list(data[cols[i]].values)) /
+                len(list(data[cols[i]].values)) for i in range(1, len(cols))]
+
+    for i, col in enumerate(cols):
+        if i == 0:
+            continue
+        data[f"{col}_av_diff"] = data[col] - averages[i-1]
+
     return data
 
 
-def gen_means():
+def save_means():
     """
     """
     data = construct_means()
@@ -41,4 +50,4 @@ def gen_means():
 
 
 if __name__ == "__main__":
-    gen_means()
+    print(save_means())
