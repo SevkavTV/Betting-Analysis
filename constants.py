@@ -1,4 +1,6 @@
 COL_NAMES = [
+        'team',
+        'score',
         'first_half_goals',
         'formation_used',
         'possession_percentage',
