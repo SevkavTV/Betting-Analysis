@@ -53,8 +53,9 @@ def filter_data(data, param):
     """
     """
     data = data[(data['strategy1'] == param) & (data['strategy2'] == param)]
-    data = data[['team1', 'team2', 'score1', 'score2', 'rating1',
-                 'rating2', 'strategy1', 'strategy2']].reset_index()
+    data = data[['team1', 'team2', 'score1', 'score2',
+                 'first_half_goals1', 'first_half_goals2',
+                 'rating1', 'rating2', 'strategy1', 'strategy2']].reset_index()
     del data['index']
 
     return data

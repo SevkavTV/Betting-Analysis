@@ -16,7 +16,7 @@ def gen_mean(team):
 def construct_means():
     """
     """
-    cols = ['team', 'formation_used', 'touches', 'total_pass',
+    cols = ['team', 'first_half_goals', 'formation_used', 'touches', 'total_pass',
             'long_pass_own_to_opp_success', 'pen_area_entries',
             'final_third_entries', 'total_fwd_zone_pass',
             'total_final_third_passes', 'attempts_obox', 'attempts_ibox',

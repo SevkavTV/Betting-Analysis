@@ -28,7 +28,9 @@ SEASON_20_21_URL = f'https://footballapi.pulselive.com/football/fixtures?comps=1
 MATCH_STATISTICS_URL = "https://footballapi.pulselive.com/football/stats/match"
 
 headers = {"origin": "https://www.premierleague.com"}
-use_stats_names = ['formation_used',
+use_stats_names = [
+                    'first_half_goals',
+                    'formation_used',
 
                     ### Overall ###
                     'touches',
@@ -83,11 +85,7 @@ def get_match_statistics(match_url: str):
 
 
     for team_id in (team1_id, team2_id):
-        try:
-            all_stats = stats_info[team_id]['M']
-        except:
-            print(team1_id, team2_id, match_url, '!!!!!!!!!!')
-            print(stats_info)
+        all_stats = stats_info[team_id]['M']
         for stat in all_stats:
             if stat['name'] in use_stats_names:
                 stats_result[stat['name']].append(stat['value'])

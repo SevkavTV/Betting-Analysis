@@ -4,6 +4,7 @@ COL_NAMES = [
 
     ### Overall ###
     'team',
+    'first_half_goals',
     'formation_used',
     'touches',
     'total_pass',
