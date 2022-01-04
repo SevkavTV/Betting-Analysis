@@ -13,9 +13,10 @@ def set_strat():
                           data['total_offside']) - 1/3*(data['total_tackle'] +
                                                         data['blocked_pass'] +
                                                         data['interception'])
-
     average = sum(list(data['rating'].values)) / len(data['rating'])
-    strats = [1 if i >= average else 0 for i in data['rating'].values]
+    print(data['rating'])
+    print(average)
+    strats = [0 if i + 1 < average else 1 for i in data['rating'].values]
 
     data['strategy'] = strats
 

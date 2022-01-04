@@ -29,13 +29,11 @@ MATCH_STATISTICS_URL = "https://footballapi.pulselive.com/football/stats/match"
 
 headers = {"origin": "https://www.premierleague.com"}
 use_stats_names = [
-                    'first_half_goals',
-                    'formation_used',
-
                     ### Overall ###
+                    'possession_percentage',
+                    'shot_off_target',
                     'touches',
                     'total_pass',
-                    "long_pass_own_to_opp_success",
 
                     ### Agressive ###
                     "pen_area_entries",
