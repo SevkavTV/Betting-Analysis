@@ -1,28 +1,31 @@
 COL_NAMES = [
+        'first_half_goals',
+        'formation_used',
+        'possession_percentage',
+        'shot_off_target',
 
-    ### Overall ###
-    'team',
-    'formation_used',
-    'touches',
-    'total_pass',
-    "long_pass_own_to_opp_success",
+        ### Overall ###
+        'touches',
+        'total_pass',
+        "long_pass_own_to_opp_success",
 
-    ### Agressive ###
-    "pen_area_entries",
-    "final_third_entries",
-    "total_fwd_zone_pass",
-    "total_final_third_passes",
-    "attempts_obox",  # outside box
-    "attempts_ibox",  # inside box
-    "total_offside",
+        ### Agressive ###
+        "pen_area_entries",
+        "final_third_entries",
+        "total_fwd_zone_pass",
+        "total_final_third_passes",
+        "attempts_obox",  # outside box
+        "attempts_ibox",  # inside box
+        "total_offside",
 
-    ### defensive ###
-    'total_tackle',
-    "blocked_pass",
-    "interception",
-    "total_back_zone_pass",
-    "fk_foul_lost",  # team fouled, freekick against them
-]
+        ### defensive ###
+        'total_tackle',
+        "blocked_pass",
+        "interception",
+        "total_back_zone_pass",
+        "fk_foul_lost",  # team fouled, freekick against them
+    ]
+
 TEAMS = [
     1,      # Arsenal
     2,      # Aston Villa
