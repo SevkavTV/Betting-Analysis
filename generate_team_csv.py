@@ -34,7 +34,7 @@ def read_csv(filename):
 #     df_team.to_csv(f"data/teams/{filename}_stats.csv")
 
 if __name__ == "__main__":
-    dat = ['team', 'score', 'attempts_ibox', 'attempts_obox']
+    dat = COL_NAMES
     get_data(read_csv("data/matchesSEASON_20_21.csv"), "SEASON_20_21", data=dat)
     get_data(read_csv("data/matchesSEASON_19_20.csv"), "SEASON_19_20", data=dat)
     get_data(read_csv("data/matchesSEASON_18_19.csv"), "SEASON_18_19", data=dat)

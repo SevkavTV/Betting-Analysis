@@ -1,5 +1,6 @@
+from numpy.lib.function_base import average
 from pandas.io.parsers import read_csv
-from constants import TEAMS, TEAMS_NAMES
+from constants import COL_NAMES, TEAMS, TEAMS_NAMES
 import pandas as pd
 import numpy as np
 
@@ -11,19 +12,23 @@ SEASONS = [
     "SEASON_16_17",
 ]
 
-def create_df(seasons):
-    df = pd.DataFrame(columns = ['score', 'shots'])
+def create_df(seasons, columns):
+    df = pd.DataFrame(columns = columns)
     for season in seasons:
         for team in TEAMS_NAMES:
             # print(team)
             df_team = read_csv(f"data/teams/{season}/{team}_score_posession.csv")
-            score = sum(df_team["score"].tolist())
-            attempts_obox = sum(df_team["attempts_obox"].tolist())
-            attempts_ibox = sum(df_team["attempts_ibox"].tolist())
-            shots = attempts_ibox + attempts_obox / 2
-            if (score != 0 and shots != 0):
-                df.loc[f"{team}{season[-2:]}"] = [score, shots]
+            arr = [list()] * len(columns)
+            arr[0] = f"{team}"
+            arr[1] = sum(df_team['score'].tolist())
+            arr[2] = average(df_team['possession_percentage'].tolist())
+            arr[3] = sum(df_team['attempts_ibox'].tolist())
+
+            if (arr[2] != 0 and arr[3] > 150 and arr[1] > 5):
+                df.loc[f"{team}{season[-2:]}"] = arr
     df.to_csv("data/score_shots.csv")
+    print(df)
+
 
 if __name__ == "__main__":
-    create_df(SEASONS)
+    create_df(SEASONS, ['team', 'score', 'possession_percentage', 'shots'])

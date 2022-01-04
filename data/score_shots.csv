@@ -1,75 +1,69 @@
-,score,shots
-Arsenal21,55.0,372.5
-Aston Villa21,55.0,421.0
-Brighton and Hove Albion21,40.0,399.5
-Burnley21,33.0,309.0
-Chelsea21,58.0,459.0
-Crystal Palace21,41.0,297.5
-Everton21,47.0,330.5
-Fulham21,27.0,358.0
-Leeds United21,62.0,441.5
-Leicester City21,68.0,378.0
-Liverpool21,68.0,504.5
-Manchester City21,83.0,490.0
-Manchester United21,73.0,429.0
-Newcastle United21,46.0,323.5
-Sheffield United21,20.0,268.0
-Southampton21,47.0,336.0
-Tottenham Hotspur21,68.0,351.0
-West Bromwich Albion21,35.0,282.5
-West Ham United21,62.0,407.5
-Wolverhampton Wanderers21,36.0,370.5
-Arsenal20,56.0,352.0
-Aston Villa20,41.0,375.5
-Brighton and Hove Albion20,39.0,380.0
-Burnley20,43.0,325.5
-Chelsea20,69.0,512.0
-Crystal Palace20,31.0,320.0
-Everton20,44.0,391.0
-Leicester City20,67.0,440.5
-Liverpool20,85.0,498.5
-Manchester City20,102.0,610.0
-Manchester United20,66.0,422.5
-Newcastle United20,38.0,312.0
-Sheffield United20,39.0,315.5
-Southampton20,51.0,391.5
-Tottenham Hotspur20,61.0,358.0
-West Ham United20,49.0,352.0
-Wolverhampton Wanderers20,51.0,382.0
-Arsenal19,73.0,389.5
-Brighton and Hove Albion19,35.0,299.0
-Burnley19,45.0,310.5
-Chelsea19,63.0,488.5
-Crystal Palace19,51.0,405.5
-Everton19,54.0,403.0
-Fulham19,34.0,348.0
-Leicester City19,51.0,406.0
-Liverpool19,89.0,476.0
-Manchester City19,95.0,542.0
-Manchester United19,65.0,418.5
-Newcastle United19,42.0,359.0
-Southampton19,45.0,375.5
-Tottenham Hotspur19,67.0,431.5
-West Ham United19,52.0,373.0
-Wolverhampton Wanderers19,47.0,387.0
-Arsenal18,74.0,481.5
-Brighton and Hove Albion18,34.0,310.0
-Burnley18,36.0,302.0
-Chelsea18,62.0,485.5
-Crystal Palace18,45.0,389.0
-Everton18,44.0,294.0
-Leicester City18,56.0,342.0
-Liverpool18,84.0,507.5
-Manchester City18,106.0,535.5
-Manchester United18,68.0,410.0
-Newcastle United18,39.0,349.0
-Southampton18,37.0,361.5
-Tottenham Hotspur18,74.0,485.5
-West Bromwich Albion18,31.0,305.0
-West Ham United18,48.0,302.0
-Arsenal17,77.0,15.0
-Burnley17,39.0,10.0
-Crystal Palace17,50.0,6.0
-Everton17,62.0,18.5
-Manchester City17,80.0,13.0
-West Ham United17,47.0,26.0
+,team,score,possession_percentage,shots
+Arsenal21,Arsenal,55,53.70526315789474,293.0
+Aston Villa21,Aston Villa,55,48.25526315789473,333.0
+Brighton and Hove Albion21,Brighton and Hove Albion,40,51.13947368421052,320.0
+Burnley21,Burnley,33,41.87105263157895,234.0
+Chelsea21,Chelsea,58,61.41578947368421,365.0
+Crystal Palace21,Crystal Palace,41,40.17368421052632,224.0
+Everton21,Everton,47,46.42105263157895,255.0
+Fulham21,Fulham,27,49.79736842105263,273.0
+Leeds United21,Leeds United,62,57.576315789473675,353.0
+Leicester City21,Leicester City,68,54.526315789473685,292.0
+Liverpool21,Liverpool,68,62.37368421052632,406.0
+Manchester City21,Manchester City,83,63.69736842105263,394.0
+Manchester United21,Manchester United,73,55.84473684210526,324.0
+Newcastle United21,Newcastle United,46,38.34736842105263,250.0
+Sheffield United21,Sheffield United,20,41.4,213.0
+Southampton21,Southampton,47,52.14210526315789,251.0
+Tottenham Hotspur21,Tottenham Hotspur,68,51.61315789473684,271.0
+West Bromwich Albion21,West Bromwich Albion,35,37.602631578947374,209.0
+West Ham United21,West Ham United,62,42.80526315789473,323.0
+Wolverhampton Wanderers21,Wolverhampton Wanderers,36,49.29210526315791,281.0
+Arsenal20,Arsenal,56,53.9078947368421,281.0
+Aston Villa20,Aston Villa,41,43.82105263157896,289.0
+Brighton and Hove Albion20,Brighton and Hove Albion,39,52.286842105263155,292.0
+Burnley20,Burnley,43,41.463157894736845,264.0
+Chelsea20,Chelsea,69,60.71315789473684,413.0
+Crystal Palace20,Crystal Palace,31,44.5421052631579,252.0
+Everton20,Everton,44,49.16052631578947,316.0
+Leicester City20,Leicester City,67,57.45789473684211,339.0
+Liverpool20,Liverpool,85,63.323684210526324,417.0
+Manchester City20,Manchester City,102,66.66578947368421,509.0
+Manchester United20,Manchester United,66,55.96842105263157,301.0
+Newcastle United20,Newcastle United,38,38.63947368421052,225.0
+Sheffield United20,Sheffield United,39,42.92368421052632,264.0
+Southampton20,Southampton,51,49.01052631578948,303.0
+Tottenham Hotspur20,Tottenham Hotspur,61,52.12105263157895,267.0
+West Ham United20,West Ham United,49,44.005263157894746,287.0
+Wolverhampton Wanderers20,Wolverhampton Wanderers,51,48.242105263157896,299.0
+Arsenal19,Arsenal,73,58.43684210526315,312.0
+Brighton and Hove Albion19,Brighton and Hove Albion,35,41.98421052631579,227.0
+Burnley19,Burnley,45,40.68684210526316,253.0
+Chelsea19,Chelsea,63,63.43684210526318,378.0
+Crystal Palace19,Crystal Palace,51,44.98947368421052,310.0
+Everton19,Everton,54,51.72631578947368,322.0
+Fulham19,Fulham,34,48.76315789473684,246.0
+Leicester City19,Leicester City,51,51.086842105263166,297.0
+Liverpool19,Liverpool,89,62.27894736842105,377.0
+Manchester City19,Manchester City,95,68.28684210526315,432.0
+Manchester United19,Manchester United,65,54.77368421052632,311.0
+Newcastle United19,Newcastle United,42,40.07631578947369,268.0
+Southampton19,Southampton,45,43.39736842105263,274.0
+Tottenham Hotspur19,Tottenham Hotspur,67,59.34473684210526,326.0
+West Ham United19,West Ham United,52,48.53947368421052,291.0
+Wolverhampton Wanderers19,Wolverhampton Wanderers,47,46.757894736842104,297.0
+Arsenal18,Arsenal,74,61.85,369.0
+Brighton and Hove Albion18,Brighton and Hove Albion,34,43.41578947368421,231.0
+Burnley18,Burnley,36,43.53684210526316,235.0
+Chelsea18,Chelsea,62,55.6842105263158,360.0
+Crystal Palace18,Crystal Palace,45,45.09736842105263,302.0
+Everton18,Everton,44,45.489473684210516,229.0
+Leicester City18,Leicester City,56,47.910526315789475,261.0
+Liverpool18,Liverpool,84,60.76052631578948,391.0
+Manchester City18,Manchester City,106,71.74999999999999,411.0
+Manchester United18,Manchester United,68,54.755263157894746,299.0
+Newcastle United18,Newcastle United,39,41.602631578947374,239.0
+Southampton18,Southampton,37,51.50263157894737,273.0
+Tottenham Hotspur18,Tottenham Hotspur,74,62.12894736842105,356.0
+West Bromwich Albion18,West Bromwich Albion,31,40.27368421052632,232.0
+West Ham United18,West Ham United,48,44.67105263157895,232.0
